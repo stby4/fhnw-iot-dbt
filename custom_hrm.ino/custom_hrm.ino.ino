@@ -221,6 +221,6 @@ void loop()
     }
   }
 
-  // Only send update once per second
-  delay(1000);
+  // Only send update once per fice seconds
+  delay(5000);
 }
