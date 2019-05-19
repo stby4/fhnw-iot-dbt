@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "nrf_sdh.h": "c",
+        "ble_conn_params.h": "c",
+        "nordic_common.h": "c"
+    }
+}
