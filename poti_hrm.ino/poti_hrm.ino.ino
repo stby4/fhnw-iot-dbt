@@ -207,10 +207,9 @@ void cccd_callback(uint16_t conn_hdl, BLECharacteristic* chr, uint16_t cccd_valu
 void loop()
 {
   digitalToggle(LED_RED);
-
-  uint8_t sensorValue = analogRead(sensorPin);
   
   if ( Bluefruit.connected() ) {
+    uint8_t sensorValue = analogRead(sensorPin) / 4;
     uint8_t hrmdata[2] = { 0b00000110, sensorValue };           // Sensor connected, increment BPS value
     
     // Note: We use .notify instead of .write!
